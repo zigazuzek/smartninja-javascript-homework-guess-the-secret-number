@@ -17,7 +17,7 @@ function game() {
     triesOutput.innerHTML = "Number of tries: " + triesCount; // Number of tries output
 
     // These conditional statements will compare input value to secret number and resolve the game
-    if (secret === inputValue.value) {
+    if (secret == inputValue.value) {
         resultOutput.classList.remove("text-muted");
         resultOutput.classList.add("text-success", "font-weight-bold");
         resultOutput.innerHTML = "Congratulations! You've guessed the correct number!";
